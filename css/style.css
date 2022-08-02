@@ -62,4 +62,14 @@ section {
     section {
         padding: 60px 40px;
     }
+
+    .only-desktop {
+      display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .only-mobile {
+      display: none;
+    }
 }
