@@ -49,6 +49,15 @@ img {
     border-radius: 1em;
 }
 
+svg {
+  fill: currentColor;
+}
+
+
+header {
+    margin: 0 auto;
+    padding: 60px;
+}
 
 section {
     max-width: 1000px;
@@ -58,9 +67,28 @@ section {
 }
 
 
+
+.icon {
+    position: relative;
+    top: .2em;
+
+    display: inline-block;
+
+    width: 1.2em;
+    height: 1.2em;
+}
+
+
 @media only screen and (max-width: 600px) {
-    section {
+    section, header {
         padding: 60px 40px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
     }
 
     .only-desktop {
