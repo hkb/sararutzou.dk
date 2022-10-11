@@ -66,6 +66,109 @@ section {
     padding: 60px;
 }
 
+hr {
+    border: none;
+    border-top: 1px solid #f5f5f4;
+}
+
+blockquote {
+    position: relative;
+    display: block;
+
+    padding: 2em;
+
+    border-radius: 1em;
+    background-color: #f1f5f9;
+}
+blockquote::before {
+    position: absolute;
+    top: -.3em;
+    left: -.14em;
+
+    content: '“';
+
+    font-size: 96px;
+    font-family: serif;
+}
+
+blockquote q {
+    display: block;
+    margin-bottom: 1em;
+    
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+
+
+
+/* checklist */
+ul.check, ol.check {
+    padding-left: .5em;
+}
+ul.check li, ol.check li {
+    list-style: none;
+}
+ul.check li::before, ol.check li::before {
+    content: '';
+    
+    position:  relative;
+    top: .2em;
+    
+    display: inline-block;
+    
+    height: 1.2em;
+    width: 1.2em;
+    
+    margin-right: .8em;
+    
+    background-image: url(/images/check.svg);
+}
+
+
+/* button */
+.button {
+    display: inline-block;
+
+    padding: .5em 1em;
+
+    border-radius: 1em;
+
+    font-weight: 600;
+
+    color: white;
+    background-color: #10b981;
+
+    white-space: nowrap;
+
+    text-decoration: none;
+}
+
+/* columns */
+.columns {
+    display: flex;
+
+    align-items: stretch;
+
+    gap: 1em;
+}
+
+.columns > *, .column {
+    flex: 1;
+}
+
+.column-grow {
+    flex-basis: auto;
+}
+
+.column-shrink {
+    flex: 0 0 auto;
+}
+
+.column-2x {
+    flex: 2;
+}
+
 
 
 .icon {
@@ -76,6 +179,10 @@ section {
 
     width: 1.2em;
     height: 1.2em;
+}
+
+.center {
+    text-align: center;
 }
 
 
